@@ -33,6 +33,7 @@ input.search {
   border-radius: 0;
   font-size: 2em;
   margin-bottom: 50px;
+  transition: all 200ms ease;
   &:focus, &:active {
     outline: none;
     border: none;
@@ -41,7 +42,6 @@ input.search {
     border-radius: 0;
     border-bottom: 1px solid white;
     color: white;
-
   }
   &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $color-primary-grey;
@@ -121,6 +121,13 @@ ul.spells {
   margin: 20px 0;
   color: white;
   font-family: $font-primary;
+  h3{
+    margin-bottom:20px;
+  }
+  h4{
+    font-family: "Kanit", serif;
+    font-size: 1.5em;
+  }
 }
 
 .modal-enter {

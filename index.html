@@ -2,7 +2,7 @@
 <html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>List of spells</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -16,7 +16,8 @@
 <div id="app" class="container-fluid">
   <modal v-if="showModal" @close="showModal = false">
     <h2 slot="header">{{selectedSpell.spell}}</h2>
-    <h3 slot="body">{{selectedSpell.effect}}</h3>
+    <h3 slot="body">{{selectedSpell.effect.charAt(0).toUpperCase() + selectedSpell.effect.slice(1)}}</h3>
+    <h4 slot="body">{{selectedSpell.type}}</h4>
   </modal>
   <h1 class="text-center title">List of spells</h1>
   <div class="form-group col-md-6">

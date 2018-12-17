@@ -28,6 +28,7 @@ input.search {
   border-radius: 0;
   font-size: 2em;
   margin-bottom: 50px;
+  transition: all 200ms ease;
 }
 input.search:focus, input.search:active {
   outline: none;
@@ -117,6 +118,13 @@ ul.spells li:hover {
   margin: 20px 0;
   color: white;
   font-family: "Lora", serif;
+}
+.modal-body h3 {
+  margin-bottom: 20px;
+}
+.modal-body h4 {
+  font-family: "Kanit", serif;
+  font-size: 1.5em;
 }
 
 .modal-enter {
